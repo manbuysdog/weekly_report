@@ -3,7 +3,6 @@ github
 """
 import json
 import re
-
 import requests
 
 GITHUB_URL = "http://github/api/graphql"
