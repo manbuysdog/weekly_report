@@ -1,6 +1,9 @@
+import os
+from configparser import SafeConfigParser
 
+config = load_config('dev')
 
-
-GITHUB_TOKEN_ENV_VAR_NAME = "GITHUB_TOKEN_RJW"
-class Config():
-    pass
+def load_config(env):
+    config = SafeConfigParser()
+    config.read('config_files/{}_config.ini'.format(env))
+    return config
