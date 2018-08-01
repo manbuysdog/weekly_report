@@ -1,20 +1,18 @@
 """
 a docstring
 """
-import pytest
+import unittest
 
 from weekly_report.github import get_columns_and_issues, add_issue_to_project_column, TEST_QUERY, \
     PROD_QUERY, \
     get_issue_id_from_number, get_projects, move_done_to_archive, archive_done
 
-
-
-def test_simple():
-    """
-
-    :return:
-    """
-    assert 1 == 1
+class WeeklyReportTestCase(unittest.TestCase):
+    def test_simple(self):
+        """
+        :return:
+        """
+        self.assertTrue(1 == 1)
 
 # def test_get_columns_and_issues(self):
 #     """
