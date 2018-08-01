@@ -14,7 +14,7 @@ def test_simple():
 
     :return:
     """
-    assert(1 == 1)
+    assert 1 == 1
 
 # def test_get_columns_and_issues(self):
 #     """
