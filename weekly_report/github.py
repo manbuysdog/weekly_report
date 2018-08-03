@@ -5,42 +5,10 @@ import json
 import re
 import requests
 
+
+
 GITHUB_URL = "http://github/api/graphql"
-PROD_QUERY = {"query": """query {
-                            organization(login:"HPC") {
-                                name,
-                                projectsUrl,
-                                project(number:5) {
-                                    name
-                                    url
-                                    columns (first: 10) {
-                                        nodes {
-                                            id
-                                            name
-                                            cards(first: 100) {
-                                                nodes {
-                                                    id
-                                                    databaseId
-                                                    content {
-                                                        ... on Issue {
-                                                            id
-                                                            number
-                                                            title
-                                                            labels (first:10) {
-                                                                nodes {
-                                                                    name
-                                                                    color
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }"""}
+
 
 TEST_QUERY = {"query": """query {
                             repository(owner:"williamr", name:"weekly_report") {
