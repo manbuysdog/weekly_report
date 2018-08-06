@@ -1,0 +1,16 @@
+{
+    "python.pythonPath": "/Users/rob/Development/python/virtual_environments/weekly_report/bin/python3.7",
+    "python.unitTest.unittestEnabled": true,
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.autoTestDiscoverOnSaveEnabled": true, 
+    "python.unitTest.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "*test*.py"
+    ]
+
+
+}
