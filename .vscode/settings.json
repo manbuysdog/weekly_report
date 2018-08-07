@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/rob/Development/python/virtual_environments/weekly_report/bin/python3.7",
+    "python.pythonPath": "/Users/rob/Development/python/virtual_envs/weekly_report/bin/python",
     "python.unitTest.unittestEnabled": true,
     "python.unitTest.pyTestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,
