@@ -10,4 +10,3 @@ def load_config(env):
     location = './weekly_report/config_files/{}_config.ini'.format(env)
     config.read(os.path.abspath(location))
     return config
-
