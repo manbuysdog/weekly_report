@@ -3,12 +3,6 @@ a docstring
 """
 import unittest
 
-from weekly_report.github import get_columns_and_issues, add_issue_to_project_column, TEST_QUERY, \
-    PROD_QUERY, \
-    get_issue_id_from_number, get_projects, move_done_to_archive, archive_done
-from weekly_report.weekly_report import generate_report
-
-
 class WeeklyReportTestCase(unittest.TestCase):
     def test_simple(self):
         """
@@ -16,10 +10,7 @@ class WeeklyReportTestCase(unittest.TestCase):
         """
         self.assertTrue(1 == 1)
 
-    @unittest.skip
-    def test_generate_report(self):
-        generate_report()
-        self.assertEqual(1,1)
+
 
 # def test_get_columns_and_issues(self):
 #     """

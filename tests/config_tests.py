@@ -13,4 +13,4 @@ class ConfigTestCase(unittest.TestCase):
     def test_load_config(self):
         conf = cfg.load_config('test')
         self.assertTrue(conf.get('env', 'name') == 'test')
-
+        
