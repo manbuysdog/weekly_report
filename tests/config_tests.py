@@ -2,6 +2,7 @@ import weekly_report.cfg as cfg
 import unittest
 import os
 
+
 class ConfigTestCase(unittest.TestCase):
     def setUp(self):
         pass
@@ -12,3 +13,4 @@ class ConfigTestCase(unittest.TestCase):
     def test_load_config(self):
         conf = cfg.load_config('test')
         self.assertTrue(conf.get('env', 'name') == 'test')
+

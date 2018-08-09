@@ -3,6 +3,8 @@ a docstring
 """
 import unittest
 
+
+
 class WeeklyReportTestCase(unittest.TestCase):
     def test_simple(self):
         """

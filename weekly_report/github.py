@@ -8,9 +8,9 @@ import requests
 class GitHub():
     def __init__(self, init):
         #pass in info from the config to initialise this github instance
-        self.url = url
+        self.url = init.url
 
-    def get_github_token():
+    def get_github_token(self):
         """
 
         :return: github token
